@@ -1,0 +1,221 @@
+@import url("http://fonts.cdnfonts.com/css/sansation");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blurple: #5574de;
+  --white: #fff;
+  /* --black: #1b262c; */
+  --black: #202225;
+  /* --grey-black: hsl(201, 24%, 9%); */
+  --grey-black: #181a1c;
+  /* --grey: hsl(201, 14%, 14%); */
+  --grey: #232627;
+}
+
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Sansation", sans-serif;
+  background: var(--black);
+  color: var(--white);
+  /* overflow: hidden; */
+}
+
+.topNav {
+  background-color: var(--grey-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5vw;
+  height: 7vh;
+  width: 95vw;
+}
+
+.topServerIconCont {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.topServerIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--grey);
+  cursor: pointer;
+}
+
+.walletBtn {
+  background-color: var(--blurple);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-right: 1rem;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.walletBtn:hover {
+  background-color: #4166e0;
+}
+
+.leftNav {
+  background-color: var(--grey-black);
+  margin-top: -7vh;
+  width: 5vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.brandName {
+  position: fixed;
+  left: 1%;
+  transform: translateX(-25%);
+  background-color: var(--grey-black);
+  color: rgba(255, 255, 255, 0.479);
+  padding: 1.2rem 0.3rem 1.2rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+.serverIconCont {
+  position: relative;
+  left: 15%;
+  top: 4rem;
+  transform: translateX(-30%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-left: 1rem;
+}
+
+.serversIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--grey);
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 52%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discordConnect {
+  background-color: var(--blurple);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: medium;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+  border: none;
+  padding: 0.8rem 5rem;
+  margin-top: 1rem;
+}
+
+.gameImg {
+  width: 95vw;
+  height: 93vh;
+  margin-left: 1vw;
+  margin-top: -18vh;
+}
+
+.logoImg {
+  width: 30rem;
+}
+
+.discordConnect:hover {
+  background-color: #4166e0;
+}
+
+.discordConnect i {
+  margin-right: 1rem;
+}
+
+.videoSect {
+  position: absolute;
+  right: 0vw;
+  bottom: 0vh;
+  width: 30rem;
+}
+
+.musicPlayer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  right: 0vw;
+  bottom: -25vh;
+  width: 30rem;
+  height: 4rem;
+  background-color: rgba(85, 116, 222, 0.25);
+  backdrop-filter: blur(30px);
+  border-radius: 0px;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.ytIcon {
+  position: relative;
+  width: 2.5rem;
+  margin-left: 1rem;
+  color: red;
+  cursor: pointer;
+}
+
+.channelName {
+  color: #fff;
+}
+
+.videoCtrl {
+  display: flex;
+  gap: 1.25rem;
+  margin-left: 12rem;
+  margin-right: 1.5rem;
+}
+
+i {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+iframe {
+  position: absolute;
+  right: 0px;
+  bottom: -17vh;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}

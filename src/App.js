@@ -1,67 +1,21 @@
-import React from "react";
-import LeftNav from "./components/LeftNav";
-import TopNav from "./components/TopNav";
-import YtLogo from "./assets/ytLogo.svg";
-
-
-
-
-
 function App() {
-
-
-
-  function showVideo()
-  {
-    console.log("show video")
-  }
-
-
-
   return (
-    <div className="App">
-      <TopNav />
-      <LeftNav />
-      
-      <div className="videoSect" >
+    <div className="App" >
 
-        <iframe
-          width="480"
-          height="315"
-          src="https://www.youtube.com/embed/9sE138cu_LU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div className="top_bar" style={{height:"65px",width:"100%",backgroundColor:"black",position:"absolute",top:0}}> left bar content here</div>
 
-      <div className="musicPlayer" >
-        <a href="https://www.youtube.com/embed/9sE138cu_LU">
-          <img className="ytIcon" src={YtLogo} alt="yt Logo" />
-        </a>
-        <h3 className="channelName">Fever 05</h3>
-        <div className="videoCtrl">
-          <i
-            class="fa-solid fa-backward-step"
-            onClick={console.log("previous video")}
-          ></i>
-          <i class="fa-solid fa-play" onClick={console.log("play video")}></i>
-          <i
-            class="fa-solid fa-forward-step"
-            onClick={console.log("next video")}
-          ></i>
-        </div>
-        <i
-          class="fa-solid fa-angle-up"
-          onClick={showVideo}
-        ></i>
+
+
+      <div className="left_bar" style={{width:"80px",height:"100%",backgroundColor:"red",position:"absolute",top:0,left:0}}> </div>
+
+      {/* //youtube div section */}
+      <div style={{bottom:47,position:"absolute",right:0}} className="youtube_player">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9sE138cu_LU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-    </div>
-
+      <div style={{height:"45px",width:"560px",backgroundColor:"purple",position:"absolute",bottom:5,right:0}}>youtube section</div>
+      
     </div>
   );
-    
-
 }
 
 export default App;

@@ -52,7 +52,7 @@ export default function VideoPlayer() {
           <i className="fa-solid fa-forward-step" onClick={nextVideo}></i>
         </div>
         <i
-          className="fa-solid fa-angle-up"
+          className="fa-solid fa-angle-down"
           ref={expandArrow}
           onClick={showVideo}
         ></i>

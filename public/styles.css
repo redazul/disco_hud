@@ -136,6 +136,7 @@ p {
   height: 2.7rem;
   border-radius: 50%;
   background-color: var(--grey);
+  cursor: pointer;
 }
 
 .gameImg {
@@ -204,8 +205,110 @@ iframe {
   display: grid;
 }
 
-@media only screen and (max-width: 1000px) {
-  .walletBtn {
-    margin-right: 3rem;
+/* top nav */
+.topNavMob {
+  height: 4rem;
+  width: 90vw;
+  margin: 0rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatarImg {
+  width: 2rem;
+  border-radius: 50%;
+}
+
+.pageTitle {
+  font-size: 1.2rem;
+}
+
+/* image section */
+.imageDiv {
+  position: relative;
+  top: 1rem;
+  left: 55%;
+  transform: translateX(-50%);
+  margin-bottom: 3rem;
+}
+
+.nftImage {
+  width: 90vw;
+}
+
+.price {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.8rem;
+  background: #252527;
+  padding: 0.5rem 2rem;
+  border-radius: 50rem;
+}
+
+.mintTokens {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.availableMintTokens {
+  background-color: #5575de5e;
+  border-radius: 2px;
+  padding: 0.5rem;
+  margin-right: 0.7rem;
+}
+
+.totalMintedText {
+  text-align: center;
+  font-weight: 400;
+}
+
+.totalMintedText span {
+  font-weight: 600;
+}
+
+.totalMintedBar {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 1rem;
+  border-radius: 0.3rem;
+  background: #2d3034;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.totalMintedBarActive {
+  width: 30vw;
+  height: 1rem;
+  background: #5470d0;
+  border-radius: 0.3rem;
+}
+
+.mintButton {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  border: none;
+  outline: none;
+  background: var(--blurple);
+  padding: 0.8rem;
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.mintButton i {
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    overflow-y: scroll;
   }
 }

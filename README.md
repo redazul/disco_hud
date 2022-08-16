@@ -1,4 +1,5 @@
 # Solana Summercamp Project 2022
+https://test.discosea.com
 
 # DiscoSea is a massive multiplayer NFT marketplace like Opensea but in the metaverse.
 # The platform will be able to host games like Steam, Fractal, itch.io and more.

@@ -11,7 +11,7 @@ export default function TopNav() {
         ))}
       </div>
 
-      <button className="walletBtn">Connect Wallet</button>
+      <button style={{marginRight:-30}} className="walletBtn">Connect Wallet</button>
     </div>
   );
 }

@@ -1,3 +1,9 @@
+#DiscoSea is a massive multiplayer NFT marketplace like Opensea but in the metaverse.
+The platform will be able to host games like Steam, Fractal, itch.io and more. 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
